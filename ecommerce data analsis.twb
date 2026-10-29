@@ -1,0 +1,2780 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0819.2015                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='d4bd03d417b5041b3e814c6dd1bb85eb1275e97f6e38eb233d39f4085ab406b5' _.fcp.WorkbookFingerprinting.true...creator-author-id='d4bd03d417b5041b3e814c6dd1bb85eb1275e97f6e38eb233d39f4085ab406b5' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='dd115c0e17a150790c99cf8942f554962d17c45bdf0237e89fb8e09b02085fec' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='dd115c0e17a150790c99cf8942f554962d17c45bdf0237e89fb8e09b02085fec' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SingleValuePerNestSorting />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location id='Book1_17920409786130' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ecommerce_cleaned' inline='true' name='federated.1b9y57n10mvfg913oyapq02o90h7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ecommerce_cleaned' name='textscan.0d2maxm0d43dqv15ablby14qlvcy'>
+            <connection class='textscan' directory='C:/Users/gouth/Downloads' filename='ecommerce_cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0d2maxm0d43dqv15ablby14qlvcy' name='ecommerce_cleaned.csv' table='[ecommerce_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Administrative' ordinal='0' />
+            <column datatype='real' name='Administrative_Duration' ordinal='1' />
+            <column datatype='integer' name='Informational' ordinal='2' />
+            <column datatype='real' name='Informational_Duration' ordinal='3' />
+            <column datatype='integer' name='ProductRelated' ordinal='4' />
+            <column datatype='real' name='ProductRelated_Duration' ordinal='5' />
+            <column datatype='real' name='BounceRates' ordinal='6' />
+            <column datatype='real' name='ExitRates' ordinal='7' />
+            <column datatype='real' name='PageValues' ordinal='8' />
+            <column datatype='real' name='SpecialDay' ordinal='9' />
+            <column datatype='string' name='Month' ordinal='10' />
+            <column datatype='integer' name='OperatingSystems' ordinal='11' />
+            <column datatype='integer' name='Browser' ordinal='12' />
+            <column datatype='integer' name='Region' ordinal='13' />
+            <column datatype='integer' name='TrafficType' ordinal='14' />
+            <column datatype='string' name='VisitorType' ordinal='15' />
+            <column datatype='boolean' name='Weekend' ordinal='16' />
+            <column datatype='boolean' name='Revenue' ordinal='17' />
+            <column datatype='integer' name='TotalPages' ordinal='18' />
+            <column datatype='real' name='TotalDuration' ordinal='19' />
+            <column datatype='integer' name='Converted' ordinal='20' />
+            <column datatype='integer' name='PagesPerSession' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Administrative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Administrative]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Administrative</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Administrative_Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Administrative_Duration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Administrative_Duration</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Informational</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Informational]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Informational</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Informational_Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Informational_Duration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Informational_Duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductRelated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductRelated]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>ProductRelated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductRelated_Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductRelated_Duration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>ProductRelated_Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BounceRates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BounceRates]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>BounceRates</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExitRates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ExitRates]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>ExitRates</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PageValues</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PageValues]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>PageValues</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpecialDay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SpecialDay]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>SpecialDay</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OperatingSystems</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OperatingSystems]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>OperatingSystems</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Browser</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Browser]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Browser</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrafficType</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrafficType]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>TrafficType</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VisitorType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VisitorType]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>VisitorType</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekend</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Weekend]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Weekend</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPages]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>TotalPages</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalDuration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalDuration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>TotalDuration</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Converted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Converted]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Converted</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PagesPerSession</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PagesPerSession]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>PagesPerSession</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Administrative Duration' datatype='real' name='[Administrative_Duration]' role='measure' type='quantitative' />
+      <column caption='Bounce Rates' datatype='real' name='[BounceRates]' role='measure' type='quantitative' />
+      <column caption='Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_0261729834299393]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Converted]) / COUNT([Converted])' />
+      </column>
+      <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+      <column caption='Exit Rates' datatype='real' name='[ExitRates]' role='measure' type='quantitative' />
+      <column caption='Informational Duration' datatype='real' name='[Informational_Duration]' role='measure' type='quantitative' />
+      <column caption='Operating Systems' datatype='integer' name='[OperatingSystems]' role='measure' type='quantitative' />
+      <column caption='Page Values' datatype='real' name='[PageValues]' role='measure' type='quantitative' />
+      <column caption='Pages Per Session' datatype='integer' name='[PagesPerSession]' role='measure' type='quantitative' />
+      <column caption='Product Related' datatype='integer' name='[ProductRelated]' role='measure' type='quantitative' />
+      <column caption='ProductRelated Duration' datatype='real' name='[ProductRelated_Duration]' role='measure' type='quantitative' />
+      <column caption='Special Day' datatype='real' name='[SpecialDay]' role='dimension' type='quantitative' />
+      <column caption='Total Duration' datatype='real' name='[TotalDuration]' role='measure' type='quantitative' />
+      <column caption='Total Pages' datatype='integer' name='[TotalPages]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Traffic Type' datatype='integer' name='[TrafficType]' role='dimension' type='ordinal' />
+      <column caption='Visitor Type' datatype='string' name='[VisitorType]' role='dimension' type='nominal' />
+      <column datatype='boolean' name='[Weekend]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='false' value='Weekday' />
+          <alias key='true' value='Weekend' />
+        </aliases>
+      </column>
+      <column caption='ecommerce_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]' role='measure' type='quantitative' />
+      <group caption='Traffic Type Set' name='[Traffic Type Set]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+          <groupfilter direction='DESC' expression='COUNT([Converted])' function='order' user:ui-marker='order'>
+            <groupfilter function='level-members' level='[TrafficType]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/gouth/AppData/Local/Temp/TableauTemp/#TableauTemp_0eflsgc0fqhcdv13knwg91kpuh8g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2026 05:08:32 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Administrative</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Administrative]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Administrative</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Administrative_Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Administrative_Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Administrative_Duration</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1657</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Informational</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Informational]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Informational</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Informational_Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Informational_Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Informational_Duration</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>652</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ProductRelated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ProductRelated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ProductRelated</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ProductRelated_Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ProductRelated_Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ProductRelated_Duration</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5254</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BounceRates</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BounceRates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BounceRates</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1012</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExitRates</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ExitRates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ExitRates</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2201</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PageValues</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PageValues]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PageValues</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4300</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SpecialDay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SpecialDay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SpecialDay</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OperatingSystems</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OperatingSystems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OperatingSystems</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Browser</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Browser]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Browser</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrafficType</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TrafficType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrafficType</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VisitorType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[VisitorType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VisitorType</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekend</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Weekend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekend</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalPages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalPages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalPages</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalDuration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalDuration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalDuration</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5400</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Converted</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Converted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Converted</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PagesPerSession</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PagesPerSession]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PagesPerSession</remote-alias>
+              <ordinal>21</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ecommerce_cleaned.csv' id='ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563'>
+            <properties context=''>
+              <relation connection='textscan.0d2maxm0d43dqv15ablby14qlvcy' name='ecommerce_cleaned.csv' table='[ecommerce_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Administrative' ordinal='0' />
+                  <column datatype='real' name='Administrative_Duration' ordinal='1' />
+                  <column datatype='integer' name='Informational' ordinal='2' />
+                  <column datatype='real' name='Informational_Duration' ordinal='3' />
+                  <column datatype='integer' name='ProductRelated' ordinal='4' />
+                  <column datatype='real' name='ProductRelated_Duration' ordinal='5' />
+                  <column datatype='real' name='BounceRates' ordinal='6' />
+                  <column datatype='real' name='ExitRates' ordinal='7' />
+                  <column datatype='real' name='PageValues' ordinal='8' />
+                  <column datatype='real' name='SpecialDay' ordinal='9' />
+                  <column datatype='string' name='Month' ordinal='10' />
+                  <column datatype='integer' name='OperatingSystems' ordinal='11' />
+                  <column datatype='integer' name='Browser' ordinal='12' />
+                  <column datatype='integer' name='Region' ordinal='13' />
+                  <column datatype='integer' name='TrafficType' ordinal='14' />
+                  <column datatype='string' name='VisitorType' ordinal='15' />
+                  <column datatype='boolean' name='Weekend' ordinal='16' />
+                  <column datatype='boolean' name='Revenue' ordinal='17' />
+                  <column datatype='integer' name='TotalPages' ordinal='18' />
+                  <column datatype='real' name='TotalDuration' ordinal='19' />
+                  <column datatype='integer' name='Converted' ordinal='20' />
+                  <column datatype='integer' name='PagesPerSession' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ecommerce_cleaned (2)' inline='true' name='federated.1vbiwil1meaag31bbrkh21c7gled' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ecommerce_cleaned' name='textscan.1a1sczt0sj7ki61b2ovl20w5xa7c'>
+            <connection class='textscan' directory='C:/Users/gouth/Downloads' filename='ecommerce_cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1a1sczt0sj7ki61b2ovl20w5xa7c' name='ecommerce_cleaned.csv' table='[ecommerce_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Administrative' ordinal='0' />
+            <column datatype='real' name='Administrative_Duration' ordinal='1' />
+            <column datatype='integer' name='Informational' ordinal='2' />
+            <column datatype='real' name='Informational_Duration' ordinal='3' />
+            <column datatype='integer' name='ProductRelated' ordinal='4' />
+            <column datatype='real' name='ProductRelated_Duration' ordinal='5' />
+            <column datatype='real' name='BounceRates' ordinal='6' />
+            <column datatype='real' name='ExitRates' ordinal='7' />
+            <column datatype='real' name='PageValues' ordinal='8' />
+            <column datatype='real' name='SpecialDay' ordinal='9' />
+            <column datatype='string' name='Month' ordinal='10' />
+            <column datatype='integer' name='OperatingSystems' ordinal='11' />
+            <column datatype='integer' name='Browser' ordinal='12' />
+            <column datatype='integer' name='Region' ordinal='13' />
+            <column datatype='integer' name='TrafficType' ordinal='14' />
+            <column datatype='string' name='VisitorType' ordinal='15' />
+            <column datatype='boolean' name='Weekend' ordinal='16' />
+            <column datatype='boolean' name='Revenue' ordinal='17' />
+            <column datatype='integer' name='TotalPages' ordinal='18' />
+            <column datatype='real' name='TotalDuration' ordinal='19' />
+            <column datatype='integer' name='Converted' ordinal='20' />
+            <column datatype='integer' name='PagesPerSession' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Administrative</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Administrative]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Administrative</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Administrative_Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Administrative_Duration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Administrative_Duration</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Informational</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Informational]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Informational</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Informational_Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Informational_Duration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Informational_Duration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductRelated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductRelated]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>ProductRelated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductRelated_Duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductRelated_Duration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>ProductRelated_Duration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BounceRates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BounceRates]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>BounceRates</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ExitRates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ExitRates]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>ExitRates</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PageValues</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PageValues]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>PageValues</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpecialDay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SpecialDay]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>SpecialDay</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OperatingSystems</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OperatingSystems]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>OperatingSystems</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Browser</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Browser]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Browser</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TrafficType</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TrafficType]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>TrafficType</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VisitorType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VisitorType]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>VisitorType</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekend</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Weekend]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Weekend</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Revenue</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Revenue]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Revenue</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalPages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalPages]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>TotalPages</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalDuration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TotalDuration]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>TotalDuration</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Converted</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Converted]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>Converted</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PagesPerSession</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PagesPerSession]</local-name>
+            <parent-name>[ecommerce_cleaned.csv]</parent-name>
+            <remote-alias>PagesPerSession</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Administrative Duration' datatype='real' name='[Administrative_Duration]' role='measure' type='quantitative' />
+      <column caption='Bounce Rates' datatype='real' name='[BounceRates]' role='measure' type='quantitative' />
+      <column caption='Exit Rates' datatype='real' name='[ExitRates]' role='measure' type='quantitative' />
+      <column caption='Informational Duration' datatype='real' name='[Informational_Duration]' role='measure' type='quantitative' />
+      <column caption='Operating Systems' datatype='integer' name='[OperatingSystems]' role='measure' type='quantitative' />
+      <column caption='Page Values' datatype='real' name='[PageValues]' role='measure' type='quantitative' />
+      <column caption='Pages Per Session' datatype='integer' name='[PagesPerSession]' role='measure' type='quantitative' />
+      <column caption='Product Related' datatype='integer' name='[ProductRelated]' role='measure' type='quantitative' />
+      <column caption='ProductRelated Duration' datatype='real' name='[ProductRelated_Duration]' role='measure' type='quantitative' />
+      <column caption='Special Day' datatype='real' name='[SpecialDay]' role='dimension' type='quantitative' />
+      <column caption='Total Duration' datatype='real' name='[TotalDuration]' role='measure' type='quantitative' />
+      <column caption='Total Pages' datatype='integer' name='[TotalPages]' role='measure' type='quantitative' />
+      <column caption='Traffic Type' datatype='integer' name='[TrafficType]' role='measure' type='quantitative' />
+      <column caption='Visitor Type' datatype='string' name='[VisitorType]' role='dimension' type='nominal' />
+      <column caption='ecommerce_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/gouth/AppData/Local/Temp/TableauTemp/#TableauTemp_1986qly0kni9gd17xtujy1jrtbo3.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2026 05:08:23 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Administrative</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Administrative]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Administrative</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Administrative_Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Administrative_Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Administrative_Duration</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1657</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Informational</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Informational]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Informational</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Informational_Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Informational_Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Informational_Duration</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>652</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ProductRelated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ProductRelated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ProductRelated</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ProductRelated_Duration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ProductRelated_Duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ProductRelated_Duration</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5254</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BounceRates</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BounceRates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BounceRates</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1012</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ExitRates</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ExitRates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ExitRates</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2201</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PageValues</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PageValues]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PageValues</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SpecialDay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SpecialDay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SpecialDay</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>10</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OperatingSystems</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OperatingSystems]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OperatingSystems</remote-alias>
+              <ordinal>11</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Browser</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Browser]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Browser</remote-alias>
+              <ordinal>12</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>13</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TrafficType</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TrafficType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TrafficType</remote-alias>
+              <ordinal>14</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VisitorType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[VisitorType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VisitorType</remote-alias>
+              <ordinal>15</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekend</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Weekend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekend</remote-alias>
+              <ordinal>16</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>17</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalPages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TotalPages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalPages</remote-alias>
+              <ordinal>18</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TotalDuration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TotalDuration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TotalDuration</remote-alias>
+              <ordinal>19</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5400</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Converted</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Converted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Converted</remote-alias>
+              <ordinal>20</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PagesPerSession</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PagesPerSession]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PagesPerSession</remote-alias>
+              <ordinal>21</ordinal>
+              <family>ecommerce_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ecommerce_cleaned.csv' id='ecommerce_cleaned.csv_5A2DD3BE71204A63A5CB5D212E74B5C2'>
+            <properties context=''>
+              <relation connection='textscan.1a1sczt0sj7ki61b2ovl20w5xa7c' name='ecommerce_cleaned.csv' table='[ecommerce_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Administrative' ordinal='0' />
+                  <column datatype='real' name='Administrative_Duration' ordinal='1' />
+                  <column datatype='integer' name='Informational' ordinal='2' />
+                  <column datatype='real' name='Informational_Duration' ordinal='3' />
+                  <column datatype='integer' name='ProductRelated' ordinal='4' />
+                  <column datatype='real' name='ProductRelated_Duration' ordinal='5' />
+                  <column datatype='real' name='BounceRates' ordinal='6' />
+                  <column datatype='real' name='ExitRates' ordinal='7' />
+                  <column datatype='real' name='PageValues' ordinal='8' />
+                  <column datatype='real' name='SpecialDay' ordinal='9' />
+                  <column datatype='string' name='Month' ordinal='10' />
+                  <column datatype='integer' name='OperatingSystems' ordinal='11' />
+                  <column datatype='integer' name='Browser' ordinal='12' />
+                  <column datatype='integer' name='Region' ordinal='13' />
+                  <column datatype='integer' name='TrafficType' ordinal='14' />
+                  <column datatype='string' name='VisitorType' ordinal='15' />
+                  <column datatype='boolean' name='Weekend' ordinal='16' />
+                  <column datatype='boolean' name='Revenue' ordinal='17' />
+                  <column datatype='integer' name='TotalPages' ordinal='18' />
+                  <column datatype='real' name='TotalDuration' ordinal='19' />
+                  <column datatype='integer' name='Converted' ordinal='20' />
+                  <column datatype='integer' name='PagesPerSession' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Bounce vs Exit Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column caption='Bounce Rates' datatype='real' name='[BounceRates]' role='measure' type='quantitative' />
+            <column caption='Exit Rates' datatype='real' name='[ExitRates]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Revenue]' role='dimension' type='nominal' />
+            <column-instance column='[Revenue]' derivation='None' name='[none:Revenue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[BounceRates]' derivation='Sum' name='[sum:BounceRates:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ExitRates]' derivation='Sum' name='[sum:ExitRates:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Revenue:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.51574587821960449' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:ExitRates:qk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:BounceRates:qk]</cols>
+      </table>
+      <simple-id uuid='{8CD3A600-675D-4FFF-9DAB-E44432CF44CC}' />
+    </worksheet>
+    <worksheet name='Conversion Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold' fontsize='10'>Conversion Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column caption='Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_0261729834299393]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Converted]) / COUNT([Converted])' />
+            </column>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0261729834299393]' derivation='User' name='[usr:Calculation_0261729834299393:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1b9y57n10mvfg913oyapq02o90h7].[usr:Calculation_0261729834299393:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>[federated.1b9y57n10mvfg913oyapq02o90h7].[usr:Calculation_0261729834299393:qk]</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3E47EFE9-63AB-456D-AA8E-93A4EB494809}' />
+    </worksheet>
+    <worksheet name='Engagement Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column datatype='boolean' name='[Revenue]' role='dimension' type='nominal' />
+            <column caption='Total Duration' datatype='real' name='[TotalDuration]' role='measure' type='quantitative' />
+            <column caption='Total Pages' datatype='integer' name='[TotalPages]' role='measure' type='quantitative' />
+            <column-instance column='[Revenue]' derivation='None' name='[none:Revenue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalDuration]' derivation='Sum' name='[sum:TotalDuration:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TotalPages]' derivation='Sum' name='[sum:TotalPages:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Revenue:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.71364641189575195' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:TotalDuration:qk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:TotalPages:qk]</cols>
+      </table>
+      <simple-id uuid='{E70C1E93-08F5-48AC-A992-CF04532965A3}' />
+    </worksheet>
+    <worksheet name='Monthly Conversion Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column caption='Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_0261729834299393]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Converted]) / COUNT([Converted])' />
+            </column>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Month]' role='dimension' type='nominal' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0261729834299393]' derivation='User' name='[usr:Calculation_0261729834299393:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[usr:Calculation_0261729834299393:qk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Month:nk]</cols>
+      </table>
+      <simple-id uuid='{289B31E4-35E2-417D-AED7-21A32A73F00D}' />
+    </worksheet>
+    <worksheet name='Monthly Traffic'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Month]' role='dimension' type='nominal' />
+            <column-instance column='[Converted]' derivation='Count' name='[cnt:Converted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1b9y57n10mvfg913oyapq02o90h7].[cnt:Converted:qk]' scope='rows' value='Total Sessions' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[cnt:Converted:qk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Month:nk]</cols>
+      </table>
+      <simple-id uuid='{DA5C0D09-D318-4380-B57C-87B0B50FF0CF}' />
+    </worksheet>
+    <worksheet name='Product Engagement'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column caption='Product Related' datatype='integer' name='[ProductRelated]' role='measure' type='quantitative' />
+            <column caption='ProductRelated Duration' datatype='real' name='[ProductRelated_Duration]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Revenue]' role='dimension' type='nominal' />
+            <column-instance column='[Revenue]' derivation='None' name='[none:Revenue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ProductRelated]' derivation='Sum' name='[sum:ProductRelated:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ProductRelated_Duration]' derivation='Sum' name='[sum:ProductRelated_Duration:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Revenue:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.69165748357772827' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:ProductRelated_Duration:qk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:ProductRelated:qk]</cols>
+      </table>
+      <simple-id uuid='{56869082-CDB5-4841-9761-44C328BEF35D}' />
+    </worksheet>
+    <worksheet name='Revenue Sessions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='10'>Revenue Sessions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column-instance column='[Converted]' derivation='Sum' name='[sum:Converted:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:Converted:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>[federated.1b9y57n10mvfg913oyapq02o90h7].[sum:Converted:qk]</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='14'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{92AFF2EA-C0B3-43EF-B851-1954D90E95A0}' />
+    </worksheet>
+    <worksheet name='Total Sessions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='10'>Total Sessions</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column-instance column='[__tableau_internal_object_id__].[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' pivot='key' type='quantitative' />
+            <column caption='ecommerce_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' value='14' />
+            <format attr='font-weight' field='[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' value='12' />
+            <format attr='color' field='[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontname='Tableau Bold' fontsize='12'>&lt;</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='12'>[federated.1b9y57n10mvfg913oyapq02o90h7].[__tableau_internal_object_id__].[cnt:ecommerce_cleaned.csv_F2A14186590A45D5B0215E813D280563:qk]</run>
+                <run bold='true' fontname='Tableau Bold' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{86FFEE55-96E6-426E-99BF-2026C2825549}' />
+    </worksheet>
+    <worksheet name='Traffic Type Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Traffic Type' datatype='integer' name='[TrafficType]' role='dimension' type='ordinal' />
+            <column-instance column='[Converted]' derivation='Count' name='[cnt:Converted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TrafficType]' derivation='None' name='[none:TrafficType:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:TrafficType:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Converted])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:TrafficType:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1b9y57n10mvfg913oyapq02o90h7].[none:TrafficType:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[none:TrafficType:ok]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[cnt:Converted:qk]</cols>
+      </table>
+      <simple-id uuid='{E3F7EDD2-1AA7-47C1-8757-9BC047D41C49}' />
+    </worksheet>
+    <worksheet name='Visitor Type Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column caption='Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_0261729834299393]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Converted]) / COUNT([Converted])' />
+            </column>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column caption='Visitor Type' datatype='string' name='[VisitorType]' role='dimension' type='nominal' />
+            <column-instance column='[VisitorType]' derivation='None' name='[none:VisitorType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0261729834299393]' derivation='User' name='[usr:Calculation_0261729834299393:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:VisitorType:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1b9y57n10mvfg913oyapq02o90h7].[usr:Calculation_0261729834299393:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[none:VisitorType:nk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[usr:Calculation_0261729834299393:qk]</cols>
+      </table>
+      <simple-id uuid='{6CF4DC2F-C7E2-479D-88B0-95C90FE4013C}' />
+    </worksheet>
+    <worksheet name='Weekend vs Weekday'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_cleaned' name='federated.1b9y57n10mvfg913oyapq02o90h7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1b9y57n10mvfg913oyapq02o90h7'>
+            <column caption='Conversion Rate' datatype='real' default-format='p0.00%' name='[Calculation_0261729834299393]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Converted]) / COUNT([Converted])' />
+            </column>
+            <column datatype='integer' name='[Converted]' role='measure' type='quantitative' />
+            <column datatype='boolean' name='[Weekend]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='false' value='Weekday' />
+                <alias key='true' value='Weekend' />
+              </aliases>
+            </column>
+            <column-instance column='[Weekend]' derivation='None' name='[none:Weekend:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0261729834299393]' derivation='User' name='[usr:Calculation_0261729834299393:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <single-value-per-nest-shelf-sorts>
+            <single-value-per-nest-shelf-sort dimension-to-sort='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Weekend:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Weekend:nk]' shelf='rows' />
+          </single-value-per-nest-shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Weekend:nk]</rows>
+        <cols>[federated.1b9y57n10mvfg913oyapq02o90h7].[usr:Calculation_0261729834299393:qk]</cols>
+      </table>
+      <simple-id uuid='{8E1EA3B9-8D44-40E2-9A6B-2AC66952C778}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='ecommerce data analysis'>
+      <style />
+      <size maxheight='1160' maxwidth='1650' minheight='560' minwidth='420' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98084' id='18' param='horz' type-v2='layout-flow' w='99024' x='488' y='958'>
+            <zone h='98084' id='15' param='horz' type-v2='layout-flow' w='99024' x='488' y='958'>
+              <zone h='98084' id='13' type-v2='layout-basic' w='99024' x='488' y='958'>
+                <zone h='14731' id='3' name='Total Sessions' w='24495' x='488' y='958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='14731' id='5' name='Revenue Sessions' w='35648' x='24983' y='958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='14731' id='6' name='Conversion Rate' w='38881' x='60631' y='958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='54849' id='7' name='Monthly Traffic' w='24495' x='488' y='15689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='44310' id='8' name='Monthly Conversion Rate' w='35648' x='24983' y='15689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='23952' id='9' name='Visitor Type Analysis' w='38881' x='60631' y='15689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='29701' id='10' name='Traffic Type Analysis' w='38881' x='60631' y='39641'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='28504' id='11' name='Weekend vs Weekday' w='24495' x='488' y='70538'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='39043' id='12' name='Engagement Analysis' w='35648' x='24983' y='59999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='29700' id='16' name='Bounce vs Exit Rate' w='38881' x='60631' y='69342'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2550' minheight='2550' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98084' id='21' param='vert' type-v2='layout-flow' w='99024' x='488' y='958'>
+                <zone fixed-size='163' h='14731' id='3' is-fixed='true' name='Total Sessions' w='24495' x='488' y='958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='163' h='14731' id='5' is-fixed='true' name='Revenue Sessions' w='35648' x='24983' y='958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='163' h='14731' id='6' is-fixed='true' name='Conversion Rate' w='38881' x='60631' y='958'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='54849' id='7' is-fixed='true' name='Monthly Traffic' w='24495' x='488' y='15689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44310' id='8' is-fixed='true' name='Monthly Conversion Rate' w='35648' x='24983' y='15689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='270' h='23952' id='9' is-fixed='true' name='Visitor Type Analysis' w='38881' x='60631' y='15689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='29701' id='10' is-fixed='true' name='Traffic Type Analysis' w='38881' x='60631' y='39641'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39043' id='12' is-fixed='true' name='Engagement Analysis' w='35648' x='24983' y='59999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='29700' id='16' is-fixed='true' name='Bounce vs Exit Rate' w='38881' x='60631' y='69342'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28504' id='11' is-fixed='true' name='Weekend vs Weekday' w='24495' x='488' y='70538'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{725AD4CC-C566-4652-82BE-E2456766AC6B}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Sessions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0F932A0B-1256-4A6B-9816-77EF09CF8529}' />
+    </window>
+    <window class='worksheet' name='Revenue Sessions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8B161FBB-A309-40C2-9903-0CBE031A610D}' />
+    </window>
+    <window class='worksheet' name='Conversion Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3DBEE5A6-39F5-4E9F-8102-CFFCA563BC11}' />
+    </window>
+    <window class='dashboard' maximized='true' name='ecommerce data analysis'>
+      <viewpoints>
+        <viewpoint name='Bounce vs Exit Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Conversion Rate' />
+        <viewpoint name='Engagement Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Conversion Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Traffic'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Revenue Sessions' />
+        <viewpoint name='Total Sessions' />
+        <viewpoint name='Traffic Type Analysis' />
+        <viewpoint name='Visitor Type Analysis' />
+        <viewpoint name='Weekend vs Weekday' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C44C3A3E-4B6F-457C-91EB-2D082B7B30B7}' />
+    </window>
+    <window class='worksheet' name='Monthly Traffic'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D71ABD2C-1A16-44E7-B5C9-752C00254FC2}' />
+    </window>
+    <window class='worksheet' name='Monthly Conversion Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E598A05F-F56E-412F-9C16-DF2E8762078B}' />
+    </window>
+    <window class='worksheet' name='Visitor Type Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{55EF974A-0E64-42F6-9960-9C9426107317}' />
+    </window>
+    <window class='worksheet' name='Traffic Type Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{63DF3D8B-19BA-43DD-AE63-B45F223EF837}' />
+    </window>
+    <window class='worksheet' name='Weekend vs Weekday'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5B1ACB89-2A8A-4FF1-AA95-46A233E7F982}' />
+    </window>
+    <window class='worksheet' name='Engagement Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Revenue:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{527AF498-9458-4656-B667-C597594F8AC4}' />
+    </window>
+    <window class='worksheet' name='Bounce vs Exit Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Revenue:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{932A861A-C177-4F2F-838E-A054BA612CCB}' />
+    </window>
+    <window class='worksheet' name='Product Engagement'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1b9y57n10mvfg913oyapq02o90h7].[none:Revenue:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3137FCAA-231B-4ED8-8C64-FB24C3F2349E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='ecommerce data analysis' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
